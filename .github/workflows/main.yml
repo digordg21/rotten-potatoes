@@ -36,7 +36,7 @@ jobs:
           push: true
           tags: 
             abed94/rotten-potatoes:latest
-            abed94/rotten-potatoes:${{github.run_number}}
+            abed94/rotten-potatoes:${{ github.run_number }}
             
         
       
