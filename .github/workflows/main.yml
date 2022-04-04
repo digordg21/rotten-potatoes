@@ -36,7 +36,7 @@ jobs:
           file: ./src/Dockerfile
           
           push: true
-          tags:
+          tags: |
             abed94/rotten-potatoes:v${{ github.run_number }}
             abed94/rotten-potatoes:latest
         
