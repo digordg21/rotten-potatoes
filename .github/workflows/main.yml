@@ -40,10 +40,11 @@ jobs:
             abed94/rotten-potatoes:v${{ github.run_number }}
             abed94/rotten-potatoes:latest
   CD:
+    needs: [CI]
     runs-on: ubuntu-latest
     
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
       
       - name: Kubernetes Set Context
         uses: Azure/k8s-set-context@v2
